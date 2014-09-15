@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="ImageFinder.ShowImage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ImageFinder"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Top">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Center"
+                    Grid.Row="0" 
+                    FlowDirection="LeftToRight" 
+                    Orientation="Horizontal" 
+                    >
+            <TextBox x:Name="textBox"
+                     Width="200" 
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     Margin="10" >
+                
+            </TextBox>
+            <Button x:Name="searchButton" 
+                    Click="searchButton_Click" 
+                    Content="Search">
+                
+            </Button>
+        </StackPanel>
+        <ListView HorizontalAlignment="Center" x:Name="listView" Grid.Row="1" >
+            
+        </ListView>
+
+    </Grid>
+</Page>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.1">
+  <CommandSet xml:lang="zh-cn" Name="englishCommands">
+    <CommandPrefix> Image </CommandPrefix>
+    <Example> Image </Example>
+
+    <Command Name="ImageSearch">
+      <Example> find 'something' </Example>
+      
+      <ListenFor> {dictatedSearchTerms} </ListenFor>
+
+      <Feedback> Searching on Google...</Feedback>
+
+      <Navigate Target="MainPage.xaml" />
+    </Command>
+
+    <PhraseTopic Label="dictatedSearchTerms" Scenario="Search">
+      <Subject> ImageName </Subject>
+    </PhraseTopic>
+
+  </CommandSet>
+</VoiceCommands>
