@@ -1,4 +1,4 @@
 GoogleImageSearchWithCortana
 ============================
 
-It`s example how to  integration Cortana into your apps
+It`s an example how to  integration Cortana into your apps
